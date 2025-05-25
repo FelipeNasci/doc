@@ -19,4 +19,4 @@ jobs:
         run: yarn build
 
       - name: Deploy App
-        run: yarn deploy
+        run: GIT_USER=${{ secrets.ACCESS_TOKEN }} GIT_USER_NAME=felipenasci GIT_USER_EMAIL=dfnascimento@live.com yarn deploy
